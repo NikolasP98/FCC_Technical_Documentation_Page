@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/styles.min.css" />
+		<script defer src="./app.js"></script>
+		<title>Ruby Documentation</title>
+	</head>
+	<body>
+		<nav id="navbar" class="sidebar">
+			<header>
+				Ruby<br />
+				Documentation
+			</header>
+			<nav id="navbar">
+				<ul>
+					<li>
+						<a class="nav-link" href="#The_History_of_Ruby">
+							The History of Ruby
+						</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#What_is_Ruby?">
+							What is Ruby?
+						</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#Install_Ruby">
+							Install Ruby
+						</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#Popular_Tools">
+							Popular Tools
+						</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#Frameworks"> Frameworks </a>
+					</li>
+				</ul>
+			</nav>
+		</nav>
+		<main id="main-doc">
+			<section id="The_History_of_Ruby" class="main-section">
+				<header>
+					<h2>The History of Ruby</h2>
+				</header>
+				<p>
+					Ruby was created by Yukihiro Matsumoto (more affectionately
+					known as Matz) in Japan starting in 1993. Matz essentially
+					kept Ruby to himself until 1995 when he released it to the
+					public. Ruby quickly gained a following in Matz's home
+					country of Japan in the following years, and finally gained
+					recognition in the rest of the programming world beginning
+					in the year 2000. From that point on Ruby has grown in
+					popularity, particularly because of the popularity of the
+					Ruby on Rails web application development framework.
+				</p>
+			</section>
+			<section id="What_is_Ruby?" class="main-section">
+				<header>
+					<h2>What is Ruby?</h2>
+				</header>
+				<p>
+					Ruby is an object-oriented interpreted scripting language.
+					When we say it is interpreted we mean to say that the Ruby
+					source code is compiled by an interpreter at the point of
+					execution (similar in this regard to JavaScript and PHP).
+					This contrasts with compiled languages such as C or C++
+					where the code is pre-compiled into a binary format targeted
+					to run on a specific brand of microprocessor. There are
+					advantages and disadvantages to being an interpreted
+					language. A disadvantage is speed. Because the source code
+					has to be interpreted at runtime this means that it runs
+					slower than an equivalent compiled application. A secondary
+					concern for some is the fact that anyone who uses your
+					application will also be able to see the source code. In the
+					world of open source this is less of a problem than it used
+					to be, but for some proprietary applications this might
+					prove to be unacceptable. The primary advantage of
+					interpreted languages is that they are portable across
+					multiple operating system platforms and hardware
+					architectures. A compiled application, on the other hand,
+					will only run on the operating system and hardware for which
+					it was compiled. For example, you can take a Ruby
+					application and run it without modification on an Intel
+					system running Linux, an Intel system running Windows, an
+					Intel system running Mac OS X or even a PowerPC system
+					running Mac OS or Linux. To do this with a C or C++
+					application you would need to compile the code on each of
+					the 5 different systems and make each binary image
+					available. With Ruby you just supply the source code.
+					Another advantage of being interpreted is that we can write
+					and execute Ruby code in real-time directly in the Ruby
+					interpreter. For those who like to try things out in real
+					time (and not everyone does), this is an invaluable feature.
+				</p>
+				<p><strong>Ruby Features:</strong></p>
+				<ul class="no-style">
+					<li>Simple Syntax</li>
+					<li>
+						Normal Object-oriented Features (e.g. class, method
+						calls)
+					</li>
+					<li>
+						Advanced Object-oriented Features (e.g. mix-in,
+						singleton-method)
+					</li>
+					<li>Operator Overloading</li>
+					<li>Iterators and Closures</li>
+					<li>Garbage Collection</li>
+				</ul>
+			</section>
+			<section id="Install_Ruby" class="main-section">
+				<header>
+					<h2>Install Ruby</h2>
+				</header>
+				<p>
+					If you cannot compile your own Ruby, and you do not want to
+					use a third-party tool, you can use your system’s package
+					manager to install Ruby. Some members of the Ruby community
+					feel that you should avoid package managers to install Ruby
+					and that you should use dedicated tools instead. It is
+					possible that major package managers will install older Ruby
+					versions instead of the latest release. To use the latest
+					Ruby release, check that the package name matches its
+					version number.
+				</p>
+				<p><strong>Instructions for Linux:</strong></p>
+				<ul class="no-style">
+					<li>
+						To check if you already have Ruby installed, use the
+						following command in your terminal: <code>ruby -v</code>
+					</li>
+					<li>
+						If an error pops up (or nothing at all!), it means you
+						don't have it installed yet. Follow the instructions
+						bellow:
+					</li>
+					<ul class="no-style">
+						<li>
+							Using apt:
+							<code>$ sudo apt-get install ruby-full</code>
+						</li>
+						<li>
+							Using yum:
+							<code>$ sudo yum install ruby</code>
+						</li>
+						<li>
+							Using snap:
+							<code>$ sudo snap install ruby --classic</code>
+						</li>
+						<li>
+							To clone the whole Ruby source tree:
+							<code>
+								$ git clone https://github.com/ruby/ruby.git
+							</code>
+						</li>
+					</ul>
+				</ul>
+			</section>
+			<section id="Popular_Tools" class="main-section">
+				<header>
+					<h2>Popular Tools</h2>
+				</header>
+				<p><strong>RubyMine</strong></p>
+				<p>
+					Produce high-quality code more efficiently, thanks to
+					first-class support for Ruby and Rails, JavaScript and
+					CoffeeScript, ERB and HAML, CSS, Sass and Less, and more.
+					Take advantage of the language specific-aware syntax & error
+					highlighting, code formatting, code completion, and quick
+					documentation.
+				</p>
+				<p>
+					Use smart search to jump to any class, file or symbol, or
+					even any IDE action or tool window. It only takes one click
+					to switch to the declaration, super method, test, usages,
+					implementation, and more. Enjoy super fast navigation in
+					your Rails project with an MVC-based project view and model,
+					class, and gem dependencies diagrams.
+				</p>
+			</section>
+			<section id="Frameworks" class="main-section">
+				<header>
+					<h2>Frameworks</h2>
+				</header>
+				<p><strong>Ruby on Rails</strong></p>
+				<p>
+					Learning to build a modern web application is daunting. Ruby
+					on Rails makes it much easier and more fun. It includes
+					everything you need to build fantastic applications, and you
+					can learn it with the support of our large, friendly
+					community.
+				</p>
+				<p>
+					You’ve probably already used many of the applications that
+					were built with Ruby on Rails: Basecamp, HEY, GitHub,
+					Shopify, Airbnb, Twitch, SoundCloud, Hulu, Zendesk, Square,
+					Cookpad. Those are just some of the big names, but there are
+					literally hundreds of thousands of applications built with
+					the framework since its release in 2004.
+				</p>
+				<p><strong>Padrino</strong></p>
+				<p>
+					Padrino is a ruby framework built upon the excellent Sinatra
+					Web Library. Sinatra is a DSL for creating simple web
+					applications in Ruby quickly and with minimal effort. This
+					framework tries to make it as fun and easy as possible to
+					code more advanced web applications by building upon the
+					Sinatra philosophies and foundations.
+				</p>
+			</section>
+		</main>
+
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>
